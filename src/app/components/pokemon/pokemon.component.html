@@ -1,0 +1,33 @@
+<mat-card class="pokemon-card">
+  <mat-card-header>
+    <mat-card-title>{{ pokemon.name }}</mat-card-title>
+    <button mat-button color="accent" routerLink="/">Back</button>
+  </mat-card-header>
+
+  <img
+    mat-card-image
+    src="{{ pokemon.download_url }}"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-content>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title
+            ><mat-icon>add</mat-icon> Show all details
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p><strong>Identifier: </strong>{{ pokemon.id }}</p>
+        <p><strong>Name: </strong>{{ pokemon.name }}</p>
+        <p><strong>Base experience: </strong>{{ pokemon.base_experience }}</p>
+        <p><strong>Order: </strong>{{ pokemon.order }}</p>
+        <p><strong>Weight: </strong>{{ pokemon.weight }}</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card-content>
+</mat-card>
