@@ -1,5 +1,5 @@
 table {
-  width: 98%;
+  width: 80%;
   margin-left: 10px;
 }
 .container {
@@ -11,4 +11,10 @@ h1 {
 }
 td {
   cursor: pointer;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
 }
