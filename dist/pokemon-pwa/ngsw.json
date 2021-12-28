@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1640620018396,
+  "timestamp": 1640695399151,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -45,7 +45,8 @@
     {
       "name": "pokemon-api",
       "patterns": [
-        "http:\\/\\/pokeapi\\.co\\/\\/.*"
+        "https:\\/\\/pokeapi\\.co\\/\\/.*",
+        "https:\\/\\/raw\\.githubusercontent\\.com\\/PokeAPI\\/sprites\\/master\\/sprites\\/pokemon\\/other\\/official-artwork\\/.*"
       ],
       "strategy": "freshness",
       "maxSize": 10,

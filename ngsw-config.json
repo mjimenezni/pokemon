@@ -30,7 +30,10 @@
   "dataGroups": [
     {
       "name": "pokemon-api",
-      "urls": ["http://pokeapi.co//**"],
+      "urls": [
+        "https://pokeapi.co//**",
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/**"
+      ],
       "cacheConfig": {
         "maxSize": 10,
         "maxAge": "1h",
